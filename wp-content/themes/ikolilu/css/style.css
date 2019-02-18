@@ -1,0 +1,594 @@
+/*  Table OF Contents
+==========================
+ 0.Hidden Modal
+ 1.Nav area
+ 2.Banner area
+ 3.Copyright
+=========================== */
+ html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+/* ============================1.Nav area =========================== */
+#topNav {
+    z-index:-1;
+}
+.test.affix  {
+    background: #001F00;
+    border: 0;
+}
+#nav {
+  width: 100%;
+}
+.test .navbar-nav>li>a, .test .navbar-nav>li>a:focus {
+    color: #90b972;
+}
+.test .navbar-nav>li>a:hover{
+    color: #fff;
+}
+.navbar-brand{
+    height:auto;
+}
+.navbar-brand img{
+width:120px;
+}
+.navbar
+{
+margin-bottom:0px;
+}
+.navbar-nav {
+  margin: 1px 1px; 
+}  
+
+.navbar-toggle {
+    outline:0;
+    border:0px;
+    margin-top: 14px;
+}
+.test .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.test .navbar-nav>li>a:hover {
+    background-color: transparent;
+    color: #d0d718;
+}
+.navbar-toggle .icon-bar {
+    width: 30px;
+}
+.test .navbar-toggle:hover, .test .navbar-toggle:focus {
+    background-color: transparent;
+}
+.test .navbar-collapse, .test .navbar-form {
+    padding:15px;
+    border-color: #333;
+}
+.test .navbar-nav>.active>a, .test .navbar-nav>.active>a:hover, .test .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color:transparent;
+}
+.navbar-collapse {
+    background-color: #000;
+    max-height:100%;
+}
+.scroll-top {
+   position:fixed;
+   bottom:0;
+   right:6%;
+   z-index:100;
+   background: #f2f3f2;
+   font-size:24px;
+   border-top-left-radius:3px;
+   border-top-right-radius:3px;
+}
+.scroll-top a:link,.scroll-top a:visited {
+  color:#222;
+} 
+ 
+section {
+  color: #dfe3ee;
+ 
+  height: auto !important;
+  height: 100%;
+  
+}
+
+.loading{
+    position: fixed;
+    top: 50%;
+    right: 40%;
+}
+
+#fade {
+    display: none;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #00000057;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .90;
+    filter: alpha(opacity=80);
+}
+
+#modal {
+    display: none;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 4px; 
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    z-index: 1002;
+    text-align:center;
+}
+
+#warning-img, #submit-txt, #error-txt, #unexpected, #emptyformerrormge, #login-txt, #login-img, #app-txt, #emtpyloginerrormge, #loader, #verify-txt, #login-error{
+    display: none;
+}
+
+#inputborder{
+    border: 2px solid #D8000C;
+}
+
+/* ============================ 2.Banner area =========================== */
+    
+    #home {
+    width:100%;
+    height:95%;
+    background-image:url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-color:#f3f3f3;
+    background-attachment: fixed;
+    background-position:top center;
+    background-size:cover;
+    position:relative;
+}
+.dropdown-menu{
+    width: 30px;
+}
+.social{
+    position:relative;
+    bottom: 0px;
+    margin-right: 20px;
+}
+.menu{
+    font-size: 16px;
+}
+.welcome{
+    position: absolute; 
+    left: 200px; 
+    bottom: 250px; 
+    color:#d0d718; 
+    font-family:cursive; 
+    font-size: 60px
+}
+.loginform{
+    border-radius: 5px;
+    position: absolute; 
+    right: 100px; 
+    bottom: 200px; 
+    width: 500px; 
+    background:rgba(34, 105, 15, 0.47); 
+    padding: 50px;
+}
+.margin-bottom{margin-bottom:10px;}
+.banner-arrow{
+    position:absolute;
+    bottom:-35px;
+    left:50%;
+    z-index:15;
+    width:60%;
+    margin-left:-30%;
+    padding-left:0;
+    list-style:none;
+    text-align:center
+}
+.baaner-container {
+    position: relative;
+    overflow: hidden;
+    width: 78%;
+    margin: 0 11%;
+}
+.main-head h1
+{
+        
+    text-align: center;
+    color: #fff;
+     font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height:32px;
+    font-weight:bold;
+    text-transform:uppercase;
+    margin-top:0px;
+    
+}
+.main-head hr
+{
+border:0px;
+
+}
+
+.main-head hr:before {
+   
+    width: 30px;
+    height: 5px;
+    content: "";
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    margin: 0 auto;
+
+    border-bottom:1px solid white;
+    border-top:2px solid white;
+}
+
+
+.main-head .text
+{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight:normal;
+    padding-top:40px;
+    
+}
+
+.main-head h2
+{
+        margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight:normal;
+
+    
+}
+.form-box
+{
+
+    width:100%;
+    height:auto;
+    position:relative;
+    padding:10px;
+    background-color:#e4e4e4;
+    
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.form-box form
+{
+
+    padding:30px;
+
+background-color:#fff;
+border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    margin:0px;
+}
+
+.request-box-head
+
+{
+    width:100%;
+    height:auto;
+    float:left;
+    font-size:22px; 
+text-align:left;
+margin-bottom:20px;
+color: #00b0ff;
+font-family: Arial, Helvetica, sans-serif;
+font-weight:normal;
+}
+.form-control {
+width: 100%;
+padding: 12px;
+font-family: Arial, Helvetica, sans-serif;
+border: 0px;
+margin-bottom: 20px;
+color:#666 !important;
+font-size: 14px;
+border-radius:0px;
+background-color:#fff;
+border:solid 1px #ccc;
+border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+}
+.form-group
+{
+    width:100%;
+    height:auto;
+    float:left;
+    margin-bottom:4px;
+    
+}
+.form-btn {
+width: 100%;
+display: block;
+height: auto;
+padding: 14px;
+color: #fff;
+background-color: #92B700;
+border: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight:normal;
+font-size: 22px;
+outline: none;
+border-radius: 0px;
+
+border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+}
+
+
+/* ============================ 8.Copyright =========================== */
+
+.copy-container {
+   width: 100%;
+    height: auto;
+    padding: 0px;
+    background-color: #d0d718;
+    position: relative;
+}
+
+.copyright {
+    margin-top:11px;
+    padding:0px;
+    font-size:11px;
+    text-align:center; 
+    height:15px;
+}
+
+
+/* RESPONSIVE CSS
+    -------------------------------------------------- */
+ @media (min-width: 640px) {
+     
+    .main-head h1 {
+  
+    font-size: 24px;
+    } 
+    label{
+    padding: 5px;
+    font-size: 18px;
+    color: #89b972;
+    }
+
+.welcome{
+    position: absolute; 
+    left: 50px; 
+    bottom: 250px; 
+    color:#d0d718; 
+    font-family:cursive; 
+    font-size: 40px
+}
+.loginform{
+    border-radius: 5px;
+    position: absolute; 
+    right: 50px; 
+    bottom: 200px; 
+    width: 300px; 
+    background:rgba(34, 105, 15, 0.47); 
+    padding: 50px;
+}
+}
+
+ @media (min-width:768px) {
+ 
+ label{
+    padding: 5px;
+    font-size: 18px;
+    color: #89b972;
+}
+.welcome{
+    position: absolute; 
+    left: 50px; 
+    bottom: 250px; 
+    color:#d0d718; 
+    font-family:cursive; 
+    font-size: 40px
+}
+.loginform{
+    border-radius: 5px;
+    position: absolute; 
+    right: 100px; 
+    bottom: 200px; 
+    width: 350px; 
+    background:rgba(34, 105, 15, 0.47); 
+    padding: 50px;
+}
+.navbar-nav {
+    float: right;
+    padding-top: 29px;
+}
+.navbar-collapse {
+    background-color: transparent;
+}
+.test .navbar-collapse{
+    padding:0px;
+}
+.social{
+    position:absolute;
+    right:20px;
+    margin-top: 45px;
+}
+.affix .navbar-nav {
+    padding-top: 30px;
+    margin: 0px;
+}
+.navbar-brand {
+    padding: 10px 15px;
+}
+.nav>li>a {
+    
+    padding: 20px 10px 30px 10px ;
+    line-height:0px;
+}
+     .navbar-nav.nav-justified > li{
+      float:none;
+  } 
+
+.navbar-brand img{
+width:150px;
+
+}
+
+.affix .navbar-brand img
+{
+width:120px;
+
+}
+.affix .navbar-brand
+{
+padding:14px 15px 0px 15px;
+}
+
+    .main-head h1 {
+  
+    font-size: 28px;
+    }  
+
+@media (min-width: 992px) {
+   
+.welcome{
+    position: absolute; 
+    left: 50px; 
+    bottom: 250px; 
+    color:#d0d718; 
+    font-family:cursive; 
+    font-size: 50px
+}
+.loginform{
+    border-radius: 5px;
+    position: absolute; 
+    right: 50px; 
+    bottom: 200px; 
+    width: 400px; 
+    background:rgba(34, 105, 15, 0.47); 
+    padding: 50px;
+}  
+.container{
+    width: 1050px;
+}
+.social{
+    position:absolute;
+    right:20px;
+    margin-top: 45px;
+}  
+label{
+    padding: 5px;
+    font-size: 18px;
+    color: #89b972;
+}
+}
+
+@media (min-width: 1200px) {
+
+    .welcome{
+        position: absolute; 
+        left: 200px; 
+        bottom: 250px; 
+        color:#d0d718; 
+        font-family:cursive; 
+        font-size: 60px
+    }
+    .loginform{
+        border-radius: 5px;
+        position: absolute; 
+        right: 100px; 
+        bottom: 200px; 
+        width: 500px; 
+        background:rgba(34, 105, 15, 0.47); 
+        padding: 50px;
+    }
+     .carousel .item {
+        margin-top: 170px;
+    }
+    .carousel-control {
+        top: 115px;
+    }
+    .social{
+        position:absolute;
+        right:20px;
+        margin-top: 45px;
+    }
+    label{
+        padding: 5px;
+        font-size: 18px;
+        color: #89b972;
+    }
+}
+
+.info, .success, .warning, .error {
+    padding:10px;
+    margin:10px 0;
+ 
+}
+.info:before, .success:before, .warning:before, .error:before {
+    font-family:FontAwesome;
+    font-style:normal;
+    font-weight:400;
+    speak:none;
+    display:inline-block;
+    text-decoration:inherit;
+    width:1em;
+    margin-right:.2em;
+    text-align:center;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1em;
+    margin-left:.2em;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+.info:before {
+    content:"\f05a";
+}
+.success:before {
+    content:'\f00c';
+}
+.warning:before {
+    content:'\f071';
+}
+.error:before {
+    content:'\f057';
+}
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+label{
+    padding: 5px;
+    font-size: 18px;
+    color: #89b972;
+}
